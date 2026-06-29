@@ -28,8 +28,9 @@ time = num_steps * time_step
 
 solution = arr_init * np.exp(-diff_rate * pi **2 * time)
 
-time_step = 0.5
+time_step = 0.011
 r = diff_rate * time_step/(spacing ** 2)
+num_steps = 300
 
 u = np.copy(arr_init)
 for n in range(num_steps):
@@ -42,7 +43,7 @@ for n in range(num_steps):
 
 plt.plot(pts, u_stable, color='b', marker='.', linestyle='none', label="Numerical Solution (r<=0.5)")
 plt.plot(pts, solution, color='r', label="Exact Solution")
-plt.plot(pts, u, color='o', linestyle='none', label="Numerical Solution (r>0.5)")
+plt.plot(pts, u, color='orange', label="Numerical Solution (r>0.5)")
 
 
 plt.xlabel("Position (x)")
