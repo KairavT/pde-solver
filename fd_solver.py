@@ -34,6 +34,6 @@ plt.xlabel("Position (x)")
 plt.ylabel("Temperature (u)")
 plt.title("Heat Equation Numerical vs Exact Solution")
 
-plt.legend(loc='upper right', fontsize='8')
+plt.legend(loc='upper right', fontsize=8)
 
 plt.show()
