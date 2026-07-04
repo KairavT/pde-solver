@@ -35,5 +35,6 @@ plt.ylabel("Temperature (u)")
 plt.title("Heat Equation Numerical vs Exact Solution")
 
 plt.legend(loc='upper right', fontsize=8)
-
+plt.savefig("Numerical_vs_Exact.png", dpi=130)
 plt.show()
+
