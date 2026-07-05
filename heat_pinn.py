@@ -106,7 +106,7 @@ for t_snap, c in zip(t_snapshots, colors):
     exact = u(x_plot, t_plot)
     plt.plot(x_plot.numpy(), exact.numpy(), color=c, linewidth=2,
              label=f'exact  t={t_snap}')
-    plt.plot(x_plot.numpy(), pred.numpy(), color=c, linestyle='--', linewidth=2,
+    plt.plot(x_plot.numpy(), pred.numpy(), color=c, linestyle='dotted', linewidth=2,
              label=f'PINN  t={t_snap}')
 
 plt.xlabel('x')
